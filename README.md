@@ -42,7 +42,7 @@ Apache Kafka para faturamento dos veículos para as Concessionárias.
     
 - ``     POSTGRES_DB: postgres``
 - ``     POSTGRES_USER: postgres``
- - ``    POSTGRES_PASSWORD: postgres``
+- ``    POSTGRES_PASSWORD: postgres``
  
  ## ✔️ Rotas
    - ``Todas as rotas para executar via Postman encontram-se na raiz do repositório no arquivo: “APIs - Fornecedor e Concessionaria.postman_collection.json”``
@@ -50,18 +50,25 @@ Apache Kafka para faturamento dos veículos para as Concessionárias.
   ## ✔️ Abaixo o projeto sendo executado conforme as rotas acima
   
   <img src="https://github.com/victordias25/projeto-microservicos/blob/main/Imagens/1.png">
-  - ``Post Cliente Juridico (API Fornecedor). ``
+  POST Cliente Juridico (API Fornecedor)
   
   <img src="https://github.com/victordias25/projeto-microservicos/blob/main/Imagens/2.png">
+  GET Cliente Juridico (API Fornecedor)
   
   <img src="https://github.com/victordias25/projeto-microservicos/blob/main/Imagens/3.png">
+  POST Venda Consignada (API Fornecedor)
   
   <img src="https://github.com/victordias25/projeto-microservicos/blob/main/Imagens/4.png">
+  GET Venda Consignada (API Fornecedor)
   
   <img src="https://github.com/victordias25/projeto-microservicos/blob/main/Imagens/5.png">
+  POST Cliente Final (API Concessionária)
   
   <img src="https://github.com/victordias25/projeto-microservicos/blob/main/Imagens/6.png">
+  GET Cliente Final (API Concessionária)
   
   <img src="https://github.com/victordias25/projeto-microservicos/blob/main/Imagens/7.png">
+  POST Venda Cliente Final (API Concessionária)
   
   <img src="https://github.com/victordias25/projeto-microservicos/blob/main/Imagens/8.png">
+  GET Faturamento após Concessionária ter efetetuado a Venda para Cliente Final (API Fornecedor)
