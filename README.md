@@ -30,7 +30,16 @@ Apache Kafka para faturamento dos veículos para as Concessionárias.
 ## 🔨 COMO EXECUTAR O PROJETO
 
 ## ✔️ Docker (usando Windows)
- - `` Como o Docker instalado na sua máquina e com ele executando. Usando um terminal de sua preferência dentro da Pasta Docker do Projeto execute o seguinte 
+ - `` Como o Docker instalado na sua máquina e com ele executando. Usando um terminal de sua preferência dentro da Pasta Docker do projeto execute o seguinte 
       comando: docker-compose -f docker-compose.yml up -d.``
       
  - `` Com o comando acima será criado e iniciado os contêineres.``
+ 
+ - `` Será criado uma imagem do wso2, postgres, zookeeper/ kafka.``
+
+## ✔️ Postgre
+- `` Dentro arquivo .YML do Docker foi criado uma imagem do Postgree. O mesmo você poderá concectar usando o DBEAVER com as credenciais:`` 
+    
+- ``     POSTGRES_DB: postgres``
+- ``     POSTGRES_USER: postgres``
+ - ``    POSTGRES_PASSWORD: postgres``
