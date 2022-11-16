@@ -89,3 +89,18 @@ Apache Kafka para faturamento dos veículos para as Concessionárias.
   <img src="https://github.com/victordias25/projeto-microservicos/blob/main/Imagens/12.png">
   Será listado todas as mensagens (chassi dos vículos Faturados).
   
+  ## ✔️ WSO2 - API Manager
+  - ``Foi usado a WSO2 - API Manager para gestão completa do ciclo de vida da API pepermitir a publicação de serviços no modelo de nuvem, permitindo que clientes  possam acessar e consumir a API.``
+  - ``Para criar a imagem do WSO2 dar o seguinte comando no terminal de sua preferência: docker run -it -p 8280:8280 -p 8243:8243 -p 9443:9443 --name api-manager wso2/wso2am:4.1.0``
+  - ``Acessar o seguinte link: https://localhost:9443/carbon/admin/login.jsp``
+  - ``E logar com as credenciais admin e senha admin.``
+  - ``Apos logar acessar https://localhost:9443/publisher/apis``
+  
+  <img src="https://github.com/victordias25/projeto-microservicos/blob/main/Imagens/13.png">
+  Tela de Login com as credenciais admin e senha admin
+  <img src="https://github.com/victordias25/projeto-microservicos/blob/main/Imagens/14.png">
+  Clicar na opção REST API
+  <img src="https://github.com/victordias25/projeto-microservicos/blob/main/Imagens/15.png">
+  Após seguir o passo a passo para importar o arquivo openapi.YAML que se encontra na raiz do projeto será aberto a tela a seguir.
+  <img src="https://github.com/victordias25/projeto-microservicos/blob/main/Imagens/16.png">
+  Após importar o arquivo .YAML você poderá visualizar suas rotas dentro da API Manager.
