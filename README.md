@@ -46,3 +46,7 @@ Apache Kafka para faturamento dos veículos para as Concessionárias.
  
  ## ✔️ Rotas
    - ``Todas as rotas para executar via Postman encontram-se na raiz do repositório no arquivo: “APIs - Fornecedor e Concessionaria.postman_collection.json”``
+   
+  ## ✔️ Abaixo o projeto sendo executado conforme as rotas acima
+  
+  <img src="https://github.com/victordias25/projeto-microservicos/blob/main/Imagens/1.png">
