@@ -90,7 +90,7 @@ Apache Kafka para faturamento dos veículos para as Concessionárias.
   Será listado todas as mensagens (chassi dos vículos Faturados).
   
   ## ✔️ WSO2 - API Manager
-  - ``Foi usado a WSO2 - API Manager para gestão completa do ciclo de vida da API pepermitir a publicação de serviços no modelo de nuvem, permitindo que clientes  possam acessar e consumir a API.``
+  - ``Foi usado a WSO2 - API Manager para gestão completa do ciclo de vida da API, permitindo a publicação de serviços no modelo de nuvem, e também permitindo que os clientes  possam acessar e consumir a API.``
   - ``Para criar a imagem do WSO2 dar o seguinte comando no terminal de sua preferência: docker run -it -p 8280:8280 -p 8243:8243 -p 9443:9443 --name api-manager wso2/wso2am:4.1.0``
   - ``Acessar o seguinte link: https://localhost:9443/carbon/admin/login.jsp``
   - ``E logar com as credenciais admin e senha admin.``
