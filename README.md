@@ -78,14 +78,11 @@ Apache Kafka para faturamento dos veículos para as Concessionárias.
   - ``Após a Concessionária ter efetuado a Venda para o Cliente Final. Sserá enviada uma  mensagem para um tópico especifico do Kafka que o Fornecedor/ Fabricante do Veículo (Consumer) é quem se conecta ao Kafka e consome essa mensagem do tópico. Essa mensagem é o chassi do Veículo. Atavés do Chassi do Veículo que foi efetuado uma venda para um Cliente Final por parte da Concessionaria, o Fornecedor efetua o faturamento desse Veículo para a Concessionárias. Para consultar a essa mensagem acessar o seguinte link: http://localhost:19000/ ”``
   
   <img src="https://github.com/victordias25/projeto-microservicos/blob/main/Imagens/9.png">
-  Página Inicial do Kafdrop (dashboard/interface para facilitar a visualização dos tópicos e mensagens). Clicar na opção topic_concessionaria_kafka (topico das         mensagens).
-  
+  Página Inicial do Kafdrop (dashboard/interface para facilitar a visualização dos tópicos e mensagens). Clicar na opção topic_concessionaria_kafka (topico das         mensagens).  
   <img src="https://github.com/victordias25/projeto-microservicos/blob/main/Imagens/10.png">
-  Clicar na opção View Messagens para verificar as mensagens.
-  
+  Clicar na opção View Messagens para verificar as mensagens.  
   <img src="https://github.com/victordias25/projeto-microservicos/blob/main/Imagens/11.png">
-  Clicar novamente na opção View Messagens para verificar as mensagens.
-  
+  Clicar novamente na opção View Messagens para verificar as mensagens.  
   <img src="https://github.com/victordias25/projeto-microservicos/blob/main/Imagens/12.png">
   Será listado todas as mensagens (chassi dos vículos Faturados).
   
