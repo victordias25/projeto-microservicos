@@ -104,3 +104,8 @@ Apache Kafka para faturamento dos veículos para as Concessionárias.
   Após seguir o passo a passo para importar o arquivo openapi.YAML que se encontra na raiz do projeto será aberto a tela a seguir.
   <img src="https://github.com/victordias25/projeto-microservicos/blob/main/Imagens/16.png">
   Após importar o arquivo .YAML você poderá visualizar suas rotas dentro da API Manager.
+  
+  ## ✔️ SWAGGER
+  - ``Foi criado manualmente a documentação da API (Open API) usando o SWAGGER. O arquivo openapi.YAML se encontra na raiz do projeto``
+   <img src="https://github.com/victordias25/projeto-microservicos/blob/main/Imagens/14.png">
+   Arquivo importado no Swagger Editor.
