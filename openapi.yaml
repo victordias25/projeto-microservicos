@@ -1,0 +1,1014 @@
+openapi: 3.0.1
+info:
+  title: APIs de Cadeia Produtiva do Setor Automobilístico
+  description: API para controlar a Cadeia Produtiva do Setor Automobilístico. Desde o Centro de Distruição até a venda ao consumidor final
+  version: 0.0.1f
+  termsOfService: https://mockapi.io
+  contact:
+    name: Suporte a Devs
+    email: contato@example.com
+    url: https://mockapi.io
+  license:
+    name: "Lincença: GPLv3"
+    url: https://www.gnu.org/licenses/gpl-3.0.html
+externalDocs:
+  description: Documentação
+  url: https://mockapi.io
+servers:
+- url: https://mockapi.io
+  description: APIs de Cadeia Produtiva do Setor Automobilístico
+paths:
+  /clienteJuridico:
+    get:
+      tags:
+        - Fornecedor
+      summary: Recupera todas os Clientes Juridicos
+      responses:
+        200:
+          description: Sucesso
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ClienteJuridico"
+        404:
+          description: Not Found
+          content:
+            application/json:
+              example: "Not Found"
+    post:
+      tags:
+        - Fornecedor
+      summary: Cadastrar novo Cliente Juridico
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ClienteJuridico"
+      responses:
+        200:
+          description: Sucesso
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ClienteJuridico"
+  /clienteJuridico/{id}:
+    parameters:
+    - name: id
+      in: path
+      schema:
+        type: integer
+      required: true
+    get:
+      tags:
+        - Fornecedor
+      summary: Recupera um Cliente Juridico pelo ID
+      responses:
+        200:
+          description: Sucesso
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ClienteJuridico"
+        404:
+          description: Not Found
+          content:
+            application/json:
+              example: "Not Found"
+    put:
+      tags:
+        - Fornecedor
+      summary: Atualiza um Cliente Juridico pelo ID
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ClienteJuridico"
+      responses:
+        default:
+          description: successful operation
+    delete:
+      tags:
+        - Fornecedor
+      summary: Deleta um Cliente Juridico pelo ID
+      responses:
+        404:
+          description: Not found
+  /veiculo:
+    get:
+      tags:
+        - Fornecedor
+      summary: Recupera todas os Veículos
+      responses:
+        200:
+          description: Sucesso
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Veiculo"
+        404:
+          description: Not Found
+          content:
+            application/json:
+              example: "Not Found"
+    post:
+      tags:
+        - Fornecedor
+      summary: Cadastrar novo Veículo
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Veiculo"
+      responses:
+        200:
+          description: Sucesso
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Veiculo"
+  /veiculo/{id}:
+    parameters:
+    - name: id
+      in: path
+      schema:
+        type: integer
+      required: true
+    put:
+      tags:
+        - Fornecedor
+      summary: Atualiza um Veículo pelo ID
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Veiculo"
+      responses:
+        default:
+          description: successful operation
+    delete:
+      tags:
+        - Fornecedor
+      summary: Deleta um Veículo pelo ID
+      responses:
+        404:
+          description: Not found
+    get:
+      tags:
+        - Fornecedor
+      summary: Recupera um Veículo pelo ID
+      responses:
+        200:
+          description: Sucesso
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Veiculo"
+        404:
+          description: Not Found
+          content:
+            application/json:
+              example: "Not Found"
+  /vendaConsignada:
+    get:
+      tags:
+        - Fornecedor
+      summary: Recupera todas as Vendas Consignadas 
+      responses:
+        200:
+          description: Sucesso
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/VendaConsignada"
+        404:
+          description: Not Found
+          content:
+            application/json:
+              example: "Not Found"
+    post:
+      tags:
+        - Fornecedor
+      summary: Cadastrar nova Venda Consignada
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/VendaConsignada"
+      responses:
+        200:
+          description: Sucesso
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/VendaConsignada"
+  /vendaConsignada/{id}:
+    parameters:
+    - name: id
+      in: path
+      schema:
+        type: integer
+      required: true
+    put:
+      tags:
+        - Fornecedor
+      summary: Atualiza uma Venda Consignada pelo ID
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/VendaConsignada"
+      responses:
+        default:
+          description: successful operation
+    delete:
+      tags:
+        - Fornecedor
+      summary: Deleta uma Venda Consignada pelo ID
+      responses:
+        404:
+          description: Not found
+    get:
+      tags:
+        - Fornecedor
+      summary: Recupera uma Venda Consignada pelo ID
+      responses:
+        200:
+          description: Sucesso
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/VendaConsignada"
+        404:
+          description: Not Found
+          content:
+            application/json:
+              example: "Not Found"
+  /faturamento:
+    get:
+      tags:
+        - Fornecedor
+      summary: Recupera todos os Faturamentos
+      responses:
+        200:
+          description: Sucesso
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Faturamento"
+        404:
+          description: Not Found
+          content:
+            application/json:
+              example: "Not Found"
+    post:
+      tags:
+        - Fornecedor
+      summary: Cadastrar novo Faturamento
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Faturamento"
+      responses:
+        200:
+          description: Sucesso
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Faturamento"
+  /faturamento/{id}:
+    parameters:
+    - name: id
+      in: path
+      schema:
+        type: integer
+      required: true
+    put:
+      tags:
+        - Fornecedor
+      summary: Atualiza um Faturamento pelo ID
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Faturamento"
+      responses:
+        default:
+          description: successful operation
+    delete:
+      tags:
+        - Fornecedor
+      summary: Deleta um Faturamento pelo ID
+      responses:
+        404:
+          description: Not found
+    get:
+      tags:
+        - Fornecedor
+      summary: Recupera um Faturamento pelo ID
+      responses:
+        200:
+          description: Sucesso
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Faturamento"
+        404:
+          description: Not Found
+          content:
+            application/json:
+              example: "Not Found"
+  /pedidoEntrega:
+    get:
+      tags:
+        - Centro de Distribuição
+      summary: Recupera todos os Pedidos de Entega
+      responses:
+        200:
+          description: Sucesso
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/PedidoEntrega"
+        404:
+          description: Not Found
+          content:
+            application/json:
+              example: "Not Found"
+    post:
+      tags:
+        - Centro de Distribuição
+      summary: Cadastrar novo Pedido de Entega
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/PedidoEntrega"
+      responses:
+        200:
+          description: Sucesso
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/PedidoEntrega"
+  /pedidoEntega/{id}:
+    parameters:
+    - name: id
+      in: path
+      schema:
+        type: integer
+      required: true
+    put:
+      tags:
+        - Centro de Distribuição
+      summary: Atualiza um Pedido de Entega pelo ID
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/PedidoEntrega"
+      responses:
+        default:
+          description: successful operation
+    delete:
+      tags:
+        - Centro de Distribuição
+      summary: Deleta um Pedido de Entega pelo ID
+      responses:
+        404:
+          description: Not found
+    get:
+      tags:
+        - Centro de Distribuição
+      summary: Recupera um Pedido de Entega pelo ID
+      responses:
+        200:
+          description: Sucesso
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/PedidoEntrega"
+        404:
+          description: Not Found
+          content:
+            application/json:
+              example: "Not Found"
+  /pedidoCompraConsignada:
+    get:
+      tags:
+        - Concessionaria
+      summary: Recupera todos os Pedidos de Compra Consignada
+      responses:
+        200:
+          description: Sucesso
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/PedidoCompraConsignada"
+        404:
+          description: Not Found
+          content:
+            application/json:
+              example: "Not Found"
+    post:
+      tags:
+        - Concessionaria
+      summary: Cadastrar novo Pedido de Compra Consignada
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/PedidoCompraConsignada"
+      responses:
+        200:
+          description: Sucesso
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/PedidoCompraConsignada"
+  /pedidoCompraConsignada/{id}:
+    parameters:
+    - name: id
+      in: path
+      schema:
+        type: integer
+      required: true
+    put:
+      tags:
+        - Concessionaria
+      summary: Atualiza um Pedido de Compra Consignada pelo ID
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/PedidoCompraConsignada"
+      responses:
+        default:
+          description: successful operation
+    delete:
+      tags:
+        - Concessionaria
+      summary: Deleta um Pedido de Entega pelo ID
+      responses:
+        404:
+          description: Not found
+    get:
+      tags:
+        - Concessionaria
+      summary: Recupera um Pedido de Entega pelo ID
+      responses:
+        200:
+          description: Sucesso
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/PedidoCompraConsignada"
+        404:
+          description: Not Found
+          content:
+            application/json:
+              example: "Not Found"  
+  /devolucaoCompraConsignada:
+    get:
+      tags:
+        - Concessionaria
+      summary: Recupera todos as Devoluções de Compra Consignada
+      responses:
+        200:
+          description: Sucesso
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/DevolucaoCompraConsignada"
+        404:
+          description: Not Found
+          content:
+            application/json:
+              example: "Not Found"
+    post:
+      tags:
+        - Concessionaria
+      summary: Cadastrar nova Devolução de Compra Consignada
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/DevolucaoCompraConsignada"
+      responses:
+        200:
+          description: Sucesso
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/DevolucaoCompraConsignada"
+  /devolucaoCompraConsignada/{id}:
+    parameters:
+    - name: id
+      in: path
+      schema:
+        type: integer
+      required: true
+    put:
+      tags:
+        - Concessionaria
+      summary: Atualiza uma Devolução de Compra Consignada pelo ID
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/DevolucaoCompraConsignada"
+      responses:
+        default:
+          description: successful operation
+    delete:
+      tags:
+        - Concessionaria
+      summary: Deleta uma Devolução de Compra Consignada pelo ID
+      responses:
+        404:
+          description: Not found
+    get:
+      tags:
+        - Concessionaria
+      summary: Recupera uma Devolução de Compra Consignada pelo ID
+      responses:
+        200:
+          description: Sucesso
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/DevolucaoCompraConsignada"
+        404:
+          description: Not Found
+          content:
+            application/json:
+              example: "Not Found" 
+  /pedidoVendaClienteFinal:
+    get:
+      tags:
+        - Concessionaria
+      summary: Recupera todos os Pedidos de Venda para Cliente Final
+      responses:
+        200:
+          description: Sucesso
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/PedidoVendaClienteFinal"
+        404:
+          description: Not Found
+          content:
+            application/json:
+              example: "Not Found"
+    post:
+      tags:
+        - Concessionaria
+      summary: Cadastrar novo Pedido de Venda para Cliente Final
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/PedidoVendaClienteFinal"
+      responses:
+        200:
+          description: Sucesso
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/PedidoVendaClienteFinal"
+  /pedidoVendaClienteFinal/{id}:
+    parameters:
+    - name: id
+      in: path
+      schema:
+        type: integer
+      required: true
+    put:
+      tags:
+        - Concessionaria
+      summary: Atualiza um Pedido de Venda para Cliente Final pelo ID
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/PedidoVendaClienteFinal"
+      responses:
+        default:
+          description: successful operation
+    delete:
+      tags:
+        - Concessionaria
+      summary: Deleta um Pedido de Venda para Cliente Final pelo ID
+      responses:
+        404:
+          description: Not found
+    get:
+      tags:
+        - Concessionaria
+      summary: Recupera um Pedido de Venda para Cliente Final pelo ID
+      responses:
+        200:
+          description: Sucesso
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/PedidoVendaClienteFinal"
+        404:
+          description: Not Found
+          content:
+            application/json:
+              example: "Not Found"
+  /fornecedor:
+    get:
+      tags:
+        - Concessionaria
+      summary: Recupera todos os Fornecedores
+      responses:
+        200:
+          description: Sucesso
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Fornecedor"
+        404:
+          description: Not Found
+          content:
+            application/json:
+              example: "Not Found"
+    post:
+      tags:
+        - Concessionaria
+      summary: Cadastrar novo Fornecedor
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Fornecedor"
+      responses:
+        200:
+          description: Sucesso
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Fornecedor"
+  /fornecedor/{id}:
+    parameters:
+    - name: id
+      in: path
+      schema:
+        type: integer
+      required: true
+    put:
+      tags:
+        - Concessionaria
+      summary: Atualiza um Fornecedor pelo ID
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Fornecedor"
+      responses:
+        default:
+          description: successful operation
+    delete:
+      tags:
+        - Concessionaria
+      summary: Deleta um Fornecedor pelo ID
+      responses:
+        404:
+          description: Not found
+    get:
+      tags:
+        - Concessionaria
+      summary: Recupera um Fornecedor pelo ID
+      responses:
+        200:
+          description: Sucesso
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Fornecedor"
+        404:
+          description: Not Found
+          content:
+            application/json:
+              example: "Not Found"
+  /clienteFinal:
+    get:
+      tags:
+        - Concessionaria
+      summary: Recupera todos os Clientes Final
+      responses:
+        200:
+          description: Sucesso
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ClienteFinal"
+        404:
+          description: Not Found
+          content:
+            application/json:
+              example: "Not Found"
+    post:
+      tags:
+        - Concessionaria
+      summary: Cadastrar novo Cliente Final
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ClienteFinal"
+      responses:
+        200:
+          description: Sucesso
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ClienteFinal"
+  /clienteFinal/{id}:
+    parameters:
+    - name: id
+      in: path
+      schema:
+        type: integer
+      required: true
+    get:
+      tags:
+        - Concessionaria
+      summary: Recupera um Cliente Final pelo ID
+      responses:
+        200:
+          description: Sucesso
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ClienteFinal"
+        404:
+          description: Not Found
+          content:
+            application/json:
+              example: "Not Found"
+    put:
+      tags:
+        - Concessionaria
+      summary: Atualiza um Cliente Final pelo ID
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ClienteFinal"
+      responses:
+        default:
+          description: successful operation
+    delete:
+      tags:
+        - Concessionaria
+      summary: Deleta um Cliente Final pelo ID
+      responses:
+        404:
+          description: Not found
+security: 
+- auth: []
+components:
+  schemas:
+    ClienteJuridico:
+      type: object
+      properties:
+        id:
+          type: integer
+        cnpj:
+          type: string
+        inscricaoEstadual:
+          type: string
+        razaoSocial:
+          type: string
+        cep:
+          type: string
+        logadouro:
+          type: string
+        numero:
+          type: string
+        complemento:
+          type: string
+        bairro:
+          type: string
+        cidade:
+          type: string
+        uf:
+          type: string
+        telefone:
+          type: string
+        email:
+          type: string
+          format: email
+    ClienteJuricos:
+      type: array
+      items:
+        $ref: "#/components/schemas/ClienteJuricos"
+    Veiculo:
+      type: object
+      properties:
+        id:
+          type: integer
+        tipoVeiculo:
+          type: string
+        fabricante:
+          type: string
+        modelo:
+          type: string
+        cor:
+         type: string
+        ano:
+          type: integer
+        chassi:
+          type: string
+        placa:
+          type: string
+    Veiculos:
+      type: array
+      items:
+        $ref: "#/components/schemas/Veiculos"
+    VendaConsignada:
+      type: object
+      properties:
+        id:
+          type: integer
+        chassiVeiculo:
+          type: string
+        cnpjCliente:
+          type: integer
+        dataVendaConsignada:
+          type: string
+          format: date
+        valorVendaConsignada:
+          type: number
+          format: double
+    VendasConsignadas:
+      type: array
+      items:
+        $ref: "#/components/schemas/VendasConsignadas"
+    Faturamento:
+      type: object
+      properties:
+        id:
+          type: integer
+        chassiVeiculo:
+          type: string
+        cnpjCliente:
+          type: integer
+        dataFaturamento:
+          type: string
+          format: date
+        valorFaturamento:
+          type: number
+          format: double
+    Faturamentos:
+      type: array
+      items:
+        $ref: "#/components/schemas/Faturamentos"
+    PedidoEntrega:
+      type: object
+      properties:
+        id:
+          type: integer
+        chassiVeiculo:
+          type: string
+        cnpjCliente:
+          type: integer
+        dataEntrega:
+          type: string
+          format: date
+    PedidosEntrega:
+      type: array
+      items:
+        $ref: "#/components/schemas/PedidosEntrega"
+    PedidoCompraConsignada:
+      type: object
+      properties:
+        id:
+          type: integer
+        chassiVeiculo:
+          type: string
+        cnpjFornecedor:
+          type: integer
+        idVeiculo:
+          type: integer
+        dataPedidoCompraConsignada:
+          type: string
+          format: date
+    PedidosCompraConsignada:
+      type: array
+      items:
+        $ref: "#/components/schemas/PedidosCompraConsignada"
+    DevolucaoCompraConsignada:
+      type: object
+      properties:
+        id:
+          type: integer
+        idPedidoCompraConsignada:
+          type: integer
+        dataDevolucao:
+          type: string
+          format: date
+    DevolucaoComprasConsignada:
+      type: array
+      items:
+        $ref: "#/components/schemas/DevolucaoComprasConsignada"
+    PedidoVendaClienteFinal:
+      type: object
+      properties:
+        id:
+          type: integer
+        chassiVeiculo:
+          type: string
+        cpfCliente:
+          type: integer
+        dataVenda:
+          type: string
+          format: date
+        valorVenda:
+          type: number
+          format: double
+    PedidosVendaClienteFinal:
+      type: array
+      items:
+        $ref: "#/components/schemas/PedidosVendaClienteFinal"
+    Fornecedor:
+      type: object
+      properties:
+        id:
+          type: integer
+        cnpj:
+          type: string
+        inscricaoEstadual:
+          type: string
+        razaoSocial:
+          type: string
+        cep:
+          type: string
+        logadouro:
+          type: string
+        numero:
+          type: string
+        complemento:
+          type: string
+        bairro:
+          type: string
+        cidade:
+          type: string
+        uf:
+          type: string
+        telefone:
+          type: string
+        email:
+          type: string
+          format: email
+    Fornecedores:
+      type: array
+      items:
+        $ref: "#/components/schemas/Fornecedores"
+    ClienteFinal:
+      type: object
+      properties:
+        id:
+          type: integer
+        cpf:
+          type: string
+        nome:
+          type: string
+        sobrenome:
+          type: string
+        dataNascimento:
+          type: string
+          format: date
+        sexo:
+          type: string
+        cep:
+          type: string
+        logadouro:
+          type: string
+        numero:
+          type: string
+        complemento:
+          type: string
+        bairro:
+          type: string
+        cidade:
+          type: string
+        uf:
+          type: string
+        telefone:
+          type: string
+        email:
+          type: string
+          format: email
+    ClientesFinal:
+      type: array
+      items:
+        $ref: "#/components/schemas/ClientesFinal"
+  securitySchemes:
+    auth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT

@@ -1,0 +1,231 @@
+{
+	"info": {
+		"_postman_id": "4dc2ad84-7574-4445-b397-09826e7f9c32",
+		"name": "APIs - Fornecedor e Concessionaria",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Post Cliente Juridico - Fornecedor",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cnpj\": \"50590900000100\", \r\n    \"inscricaoEstadual\": \"123456789 \",       \r\n    \"razaoSocial\": \"Dias Company\",\r\n    \"cep\": \"00000-111\", \r\n    \"logadouro\": \"Rua A\",        \r\n    \"numero\": \"10\",        \r\n    \"complemento\": \"Casa a\",\r\n    \"bairro\": \"Santana\",       \r\n    \"cidade\": \"São Paulo\",   \r\n    \"uf\": \"SP\", \r\n    \"telefone\": \"111\",       \r\n    \"email\": \"email@email.com\"        \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8070/clienteJuridico/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8070",
+					"path": [
+						"clienteJuridico",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Cliente Juridico - Fornecedor",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8070/clienteJuridico/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8070",
+					"path": [
+						"clienteJuridico",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Venda Consignada - Fornecedor",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{  \r\n  \"chassiVeiculo\": \"1111111122222BBAA\",\r\n  \"cnpjCliente\": \"12312312312\",\r\n  \"dataVendaConsignada\": \"2022-11-09\",\r\n  \"valorVendaConsignada\": \"80000\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8070/vendaConsignada/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8070",
+					"path": [
+						"vendaConsignada",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Venda Consignada - Fornecedor",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8070/vendaConsignada/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8070",
+					"path": [
+						"vendaConsignada",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Cliente - Concessionaria",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cpf\": \"12312312312\", \r\n    \"nome\": \"Victor \",       \r\n    \"sobrenome\": \"Dias\",    \r\n    \"dataNascimento\": \"01/06/1992\",     \r\n    \"sexo\": \"Masculino\",  \r\n    \"cep\": \"00000-111\", \r\n    \"logadouro\": \"Rua A\",        \r\n    \"numero\": \"10\",        \r\n    \"complemento\": \"Casa a\",\r\n    \"bairro\": \"Santana\",       \r\n    \"cidade\": \"São Paulo\",   \r\n    \"uf\": \"SP\", \r\n    \"telefone\": \"111\",       \r\n    \"email\": \"email@email.com\"        \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8090/cliente/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"cliente",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Cliente - Concessionaria",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8090/cliente/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"cliente",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Venda Cliente - Concessionaria",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{  \r\n  \"chassiVeiculo\": \"1111111122222BBAA\",\r\n  \"cpfCliente\": \"12312312312\",\r\n  \"dataVenda\": \"2022-11-09\",\r\n  \"valorVenda\": \"80000\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8090/venda/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"venda",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Chassi Véiculo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8070/vendaConsignada/find?chassiVeiculo=1111111122222BBAA",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8070",
+					"path": [
+						"vendaConsignada",
+						"find"
+					],
+					"query": [
+						{
+							"key": "chassiVeiculo",
+							"value": "1111111122222BBAA"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Veículos Faturados",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8070/faturamento/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8070",
+					"path": [
+						"faturamento",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
