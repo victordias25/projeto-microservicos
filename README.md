@@ -124,6 +124,7 @@ Apache Kafka para faturamento dos veículos para as Concessionárias.
 - ``Zookeeper``
 - ``Kafdrop``
 - ``WSO2``
+- ``Swagger``
 
 ## ✔️ Autores
 - ``Ali Tannouri Neto``
