@@ -74,6 +74,7 @@ Apache Kafka para faturamento dos veículos para as Concessionárias.
   GET Faturamento após Concessionária ter efetetuado a Venda para Cliente Final (API Fornecedor)
   
   ## ✔️ KAFKA
+  
   - ``Após a Concessionária ter efetuado a Venda para o Cliente Final. Sserá enviada uma  mensagem para um tópico especifico do Kafka que o Fornecedor/ Fabricante do Veículo (Consumer) é quem se conecta ao Kafka e consome essa mensagem do tópico. Essa mensagem é o chassi do Veículo. Atavés do Chassi do Veículo que foi efetuado uma venda para um Cliente Final por parte da Concessionaria, o Fornecedor efetua o faturamento desse Veículo para a Concessionárias. Para consultar a essa mensagem acessar o seguinte link: http://localhost:19000/ ”``
   
   <img src="https://github.com/victordias25/projeto-microservicos/blob/main/Imagens/9.png">
