@@ -75,7 +75,7 @@ Desenvolvido APIs do Fornecedor, Centro de Distribuição e Concessionárias. Ca
   
   ## ✔️ KAFKA
   
-  - ``Após a Concessionária ter efetuado a Venda para o Cliente Final. Sserá enviada uma  mensagem para um tópico especifico do Kafka que o Fornecedor/ Fabricante do Veículo (Consumer) é quem se conecta ao Kafka e consome essa mensagem do tópico. Essa mensagem é o chassi do Veículo. Atavés do Chassi do Veículo que foi efetuado uma venda para um Cliente Final por parte da Concessionaria, o Fornecedor efetua o faturamento desse Veículo para a Concessionárias. Para consultar a essa mensagem acessar o seguinte link: http://localhost:19000/ ”``
+  - ``Após a Concessionária ter efetuado a Venda para o Cliente Final. Sserá enviada uma  mensagem para um tópico especifico do Kafka que o Fornecedor/ Fabricante do Veículo (Consumer) é quem se conecta ao Kafka e consome essa mensagem do tópico. Essa mensagem é o chassi do Veículo. Atavés do Chassi do Veículo que foi efetuado uma venda para um Cliente Final por parte da Concessionaria, o Fornecedor efetua o faturamento desse Veículo para a Concessionária. Para consultar a essa mensagem acessar o seguinte link: http://localhost:19000/``
   
   <img src="https://github.com/victordias25/projeto-microservicos/blob/main/Imagens/9.png">
   Página Inicial do Kafdrop (dashboard/interface para facilitar a visualização dos tópicos e mensagens). Clicar na opção topic_concessionaria_kafka (topico das         mensagens).
