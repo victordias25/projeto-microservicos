@@ -109,3 +109,25 @@ Apache Kafka para faturamento dos veículos para as Concessionárias.
   - ``Foi criado manualmente a documentação da API (Open API) usando o SWAGGER. O arquivo openapi.YAML se encontra na raiz do projeto``
    <img src="https://github.com/victordias25/projeto-microservicos/blob/main/Imagens/17.png">
    Arquivo importado no Swagger Editor.
+   
+   ## ✔️ Técnicas e tecnologias utilizadas
+
+- ``Spring`` 
+- ``Lombok``
+- ``Kafka``
+- ``Java``
+- ``Postman``
+- ``Postgree``
+- ``Docker``
+- ``Intellij``
+- ``Maven``
+- ``Zookeeper``
+- ``Kafdrop``
+- - ``WSO2``
+
+## ✔️ Autores
+- ``Ali Tannouri Neto``
+- ``Matheus Ciribel``
+- ``Pedro Henrique Rossi``
+- ``Victor Alves Bugueno``
+- ``Victor Augusto Pereira Dias Nicola``
