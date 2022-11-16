@@ -87,7 +87,7 @@ Desenvolvido APIs do Fornecedor, Centro de Distribuição e Concessionárias. Ca
   Clicar novamente na opção View Messagens para verificar as mensagens.
   
   <img src="https://github.com/victordias25/projeto-microservicos/blob/main/Imagens/12.png">
-  Será listado todas as mensagens (chassi dos vículos Faturados).
+  Será listado todas as mensagens (chassi dos veículos Faturados).
   
   ## ✔️ WSO2 - API Manager
   - ``Foi usado a WSO2 - API Manager para gestão completa do ciclo de vida da API, permitindo a publicação de serviços no modelo de nuvem, e também permitindo que os clientes  possam acessar e consumir a API.``
