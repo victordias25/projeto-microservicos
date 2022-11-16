@@ -50,3 +50,18 @@ Apache Kafka para faturamento dos veículos para as Concessionárias.
   ## ✔️ Abaixo o projeto sendo executado conforme as rotas acima
   
   <img src="https://github.com/victordias25/projeto-microservicos/blob/main/Imagens/1.png">
+  - ``Post Cliente Juridico (API Fornecedor). ``
+  
+  <img src="https://github.com/victordias25/projeto-microservicos/blob/main/Imagens/2.png">
+  
+  <img src="https://github.com/victordias25/projeto-microservicos/blob/main/Imagens/3.png">
+  
+  <img src="https://github.com/victordias25/projeto-microservicos/blob/main/Imagens/4.png">
+  
+  <img src="https://github.com/victordias25/projeto-microservicos/blob/main/Imagens/5.png">
+  
+  <img src="https://github.com/victordias25/projeto-microservicos/blob/main/Imagens/6.png">
+  
+  <img src="https://github.com/victordias25/projeto-microservicos/blob/main/Imagens/7.png">
+  
+  <img src="https://github.com/victordias25/projeto-microservicos/blob/main/Imagens/8.png">
