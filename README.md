@@ -11,13 +11,13 @@ Desenvolvido APIs do Fornecedor, Centro de Distribuição e Concessionárias. Ca
 > :construction: Projeto Concluído
 
 # Serviços síncronos
-CRUDS Veículos e Clientes
-Pedido de Venda
-Pedido de Devolução
+- ``CRUDS Veículos e Clientes``
+- ``Pedido de Venda``
+- ``Pedido de Devolução``
 
 # Serviços assíncronos 
 
-Apache Kafka para faturamento dos veículos para as Concessionárias.
+- ``Apache Kafka para faturamento dos veículos para as Concessionárias.``
 
 # Diagrama de Microserviços
 
