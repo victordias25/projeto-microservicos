@@ -43,3 +43,6 @@ Apache Kafka para faturamento dos veículos para as Concessionárias.
 - ``     POSTGRES_DB: postgres``
 - ``     POSTGRES_USER: postgres``
  - ``    POSTGRES_PASSWORD: postgres``
+ 
+ ## ✔️ Rotas
+   - ``Todas as rotas para executar via Postman encontram-se na raiz do repositório no arquivo: “APIs - Fornecedor e Concessionaria.postman_collection.json”``
